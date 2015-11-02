@@ -7,6 +7,12 @@ require 'audit_weasel/callbacks'
 require 'audit_weasel/request_registry'
 require 'audit_weasel/railtie' if defined?(Rails)
 
+begin
+  require 'pry'
+rescue
+  LoadError
+end
+
 # Load all functionality required by the gem
 module AuditWeasel
   # configuration to come

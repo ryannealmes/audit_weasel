@@ -6,14 +6,13 @@
 
 # AuditWeasel
 
-AuditWeasel is meant to provide a light weight rails auditing tool. It
-provides way of auditing changes to database records. It works on two fields
-created_by_user_id and updated_by_user_id to keep track of changes made to a
-record. This of a timestamp for user changes.
+AuditWeasel is a light weight Rails auditing tool. It track changes
+to database records using two fields on a table - created_by_user_id and
+updated_by_user_id. It's sort of like a timestamp field, but for users.
 
-So let's say user A updates a record, the record will record user A in the
+So let's say user A updates a record, the record will have user A in the
 created_by_user_id and updated_by_user_id fields. Now user B comes along and
-makes a change to the field, the updated_by_user_Id will change to user B.
+makes a change to the record, the updated_by_user_Id will change to user B.
 
 This is pretty handy if you don't want to burden your system with heavy
 auditing, but you do want to be able to have insight into what your users
@@ -33,11 +32,39 @@ Or install it yourself as:
 
     $ gem install audit_weasel
 
-
-
 ## Usage
 
-TODO: Generators to come!
+To install audit_weasel:
+
+```
+rails generate audit_weasel:install
+```
+
+This will generate a config file under the initializers director. Right now
+there no configuration settings, but I am looking to add a couple of things.
+
+To audit a table:
+
+```
+rails generate audit_weasel [table_name]
+```
+
+This will generate migration scripts that will add created_by_user_id and
+updated_by_user_id to the table. Run the migrations and you should be
+good.
+
+AuditWeasel depends on current_user being available at the application
+controller level as that is where the active user is set. If you are using
+devise things should just work. If you aren't using devise you can always
+extend your application to expose a current user.
+
+```ruby
+class ApplicationController < ActionController::Base
+  def current_user
+    # get the current user
+  end
+end
+```
 
 ## Contributing
 
@@ -46,3 +73,14 @@ TODO: Generators to come!
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+6. Ensure your stuff is rubocop'd
+
+I am always keen to learn so please feel free to create an issue with code
+reviews, suggestions and possible refactorings.
+
+## TODOS
+
+- Currently if the application controller does not have a `current_user`
+accessible AuditWeasel will not do anything. Extend to code to allow
+developers to configure the name of the method used to retrieve the current
+user on the application controller.
