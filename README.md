@@ -50,7 +50,8 @@ rails generate audit_weasel [table_name]
 
 This will generate migration scripts that will add created_by_user_id and
 updated_by_user_id to the table. Run the migrations and you should be
-good.
+good. Start making changes through your application and your should see 
+user ids recorded against the record being changed!
 
 AuditWeasel depends on current_user being available at the application
 controller level as that is where the active user is set. If you are using
