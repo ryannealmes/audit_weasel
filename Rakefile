@@ -6,5 +6,5 @@ RSpec::Core::RakeTask.new(:spec)
 task default: :spec
 
 task :console do
-  exec 'pry -r moodle -I ./lib'
+  exec 'pry -r audit_weasel -I ./lib'
 end
