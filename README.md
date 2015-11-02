@@ -3,7 +3,6 @@
 [![Test Coverage](https://codeclimate.com/github/ryannealmes/audit_weasel/badges/coverage.svg)](https://codeclimate.com/github/ryannealmes/audit_weasel/coverage)
 [![Dependency Status](https://gemnasium.com/ryannealmes/audit_weasel.svg)](https://gemnasium.com/ryannealmes/audit_weasel)
 
-
 # AuditWeasel
 
 AuditWeasel is a light weight Rails auditing tool. It track changes
@@ -84,3 +83,5 @@ reviews, suggestions and possible refactorings.
 accessible AuditWeasel will not do anything. Extend to code to allow
 developers to configure the name of the method used to retrieve the current
 user on the application controller.
+- It would be nice to extend this to work with APIs. I am sure the concept
+is pretty much the same, I just need to look at it. Feel free to make a PR.
