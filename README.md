@@ -1,8 +1,12 @@
+[![Code Climate](https://codeclimate.com/repos/56366d6b1787d72fa4002b02/badges/4d5a1c11ffebbf2fcdd8/gpa.svg)](https://codeclimate.com/repos/56366d6b1787d72fa4002b02/feed)
+[![Test Coverage](https://codeclimate.com/repos/56366d6b1787d72fa4002b02/badges/4d5a1c11ffebbf2fcdd8/coverage.svg)](https://codeclimate.com/repos/56366d6b1787d72fa4002b02/coverage)
+
 # AuditWeasel
 
-AuditWeasel is meant to provide a light way of auditing changes to database
-records. It works on two fields created_by_user_id and updated_by_user_id to
-keep track of changes made to a record. This of a timestamp for user changes.
+AuditWeasel is meant to provide a light weight rails auditing tool. It
+provides way of auditing changes to database records. It works on two fields
+created_by_user_id and updated_by_user_id to keep track of changes made to a
+record. This of a timestamp for user changes.
 
 So let's say user A updates a record, the record will record user A in the
 created_by_user_id and updated_by_user_id fields. Now user B comes along and
