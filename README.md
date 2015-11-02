@@ -1,5 +1,5 @@
-[![Code Climate](https://codeclimate.com/repos/56366d6b1787d72fa4002b02/badges/4d5a1c11ffebbf2fcdd8/gpa.svg)](https://codeclimate.com/repos/56366d6b1787d72fa4002b02/feed)
-[![Test Coverage](https://codeclimate.com/repos/56366d6b1787d72fa4002b02/badges/4d5a1c11ffebbf2fcdd8/coverage.svg)](https://codeclimate.com/repos/56366d6b1787d72fa4002b02/coverage)
+[![Code Climate](https://codeclimate.com/github/ryannealmes/audit_weasel/badges/gpa.svg)](https://codeclimate.com/github/ryannealmes/audit_weasel)
+[![Test Coverage](https://codeclimate.com/github/ryannealmes/audit_weasel/badges/coverage.svg)](https://codeclimate.com/github/ryannealmes/audit_weasel/coverage)
 
 # AuditWeasel
 
