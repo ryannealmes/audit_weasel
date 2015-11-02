@@ -8,3 +8,5 @@ AllCops:
     - 'spec/fixtures/**/*'
     - 'Guardfile'
     - 'audit_weasel.gemspec'
+    - 'lib/generators/audit_weasel/templates/*'
+    - 'lib/generators/install/templates/*'
