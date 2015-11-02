@@ -1,5 +1,8 @@
 [![Code Climate](https://codeclimate.com/github/ryannealmes/audit_weasel/badges/gpa.svg)](https://codeclimate.com/github/ryannealmes/audit_weasel)
+[![Build Status](https://travis-ci.org/ryannealmes/audit_weasel.svg?branch=master)](https://travis-ci.org/ryannealmes/audit_weasel.svg)
 [![Test Coverage](https://codeclimate.com/github/ryannealmes/audit_weasel/badges/coverage.svg)](https://codeclimate.com/github/ryannealmes/audit_weasel/coverage)
+[![Dependency Status](https://gemnasium.com/ryannealmes/audit_weasel.svg)](https://gemnasium.com/ryannealmes/audit_weasel)
+
 
 # AuditWeasel
 
