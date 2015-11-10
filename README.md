@@ -15,8 +15,10 @@ created_by_user_id and updated_by_user_id fields. Now user B comes along and
 makes a change to the record, the updated_by_user_Id will change to user B.
 
 This is pretty handy if you don't want to burden your system with heavy
-auditing, but you do want to be able to have insight into what your users
-have done.
+auditing, but you do want to have insight into what your users
+have done. It's all in the background and if you want to expose the 
+auditing data through the front end your can since it's just a normal 
+field on the model.
 
 ## Installation
 
