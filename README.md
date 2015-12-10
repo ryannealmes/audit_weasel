@@ -42,7 +42,7 @@ To install audit_weasel:
 rails generate audit_weasel:install
 ```
 
-This will generate a config file under the initializers director. Right now
+This will generate a config file under the initializers directory. Right now
 there no configuration settings, but I am looking to add a couple of things.
 
 To audit a table:
